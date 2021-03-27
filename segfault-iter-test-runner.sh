@@ -7,8 +7,8 @@ echo 'buffer size,input size to segfault' > segfaults.csv
 
 while [ $i -lt 64 ]; do
 	let i=$i+1
-
 	echo "make BOF.c BOF TRY_BUFFER_SIZE=${i}" | bash
+
 	printf "$i," \
 	>> segfaults.csv
 
