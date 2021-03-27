@@ -28,6 +28,29 @@ make iter
 cat segfaults.csv
 ```
 
+## Docker
+
+### Build
+```sh
+docker build . -t buffer-overflow-segfaults
+```
+
+### Run
+```sh
+docker run -t buffer-overflow-segfaults
+```
+
+### Shell
+```sh
+docker run --entrypoint /bin/bash -i -t buffer-overflow-segfaults
+```
+
+### Run and output `segfaults.csv`
+```sh
+docker run --entrypoint /bin/bash -i -t buffer-overflow-segfaults \
+-c 'make iter |& cat >> /dev/null; cat segfaults.csv' | tee segfaults.csv
+```
+
 
 ## Show make targets
 ```sh
