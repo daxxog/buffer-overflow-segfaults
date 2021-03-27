@@ -19,7 +19,7 @@ clang-format \
 
 # download source code
 WORKDIR /src
-RUN git clone  https://github.com/daxxog/buffer-overflow-segfaults.git
+RUN git clone https://github.com/daxxog/buffer-overflow-segfaults.git
 
 # setup entrypoint
 WORKDIR /src/buffer-overflow-segfaults
