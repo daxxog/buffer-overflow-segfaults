@@ -1,4 +1,4 @@
-// A C program to demonstrate buffer overflow #include <stdio.h>
+// A C program to demonstrate buffer overflow
 
 #include <stdio.h>
 #include <stdlib.h>
